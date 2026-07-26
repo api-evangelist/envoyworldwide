@@ -1,8 +1,25 @@
 aid: envoyworldwide
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/envoyworldwide.png
 name: EnvoyWorldWide
-description: EnvoyWorldWide is a company surfaced as a portfolio company of battery-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: EnvoyWorldWide (Envoy WorldWide, Inc.) was a Massachusetts-based automated notification
+  and interactive multi-channel messaging company, backed by Battery Ventures, that sold hosted alerting
+  and customer-communication services. The company rebranded as Varolii Corporation in the mid-2000s,
+  and the envoyworldwide.com property was retired. As of this enrichment pass the domain has no A record
+  and its most recent archived captures show a parked "Under Construction" placeholder rather than a
+  company site. No developer portal, documentation, API reference, SDK, package, or GitHub organization
+  could be located on any public surface. This profile is retained as a historical network entry with
+  no active API surface.
 url: https://raw.githubusercontent.com/api-evangelist/envoyworldwide/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +27,44 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-evidence:
+- signal: dns
+  detail: envoyworldwide.com has Azure DNS nameservers but resolves to no A record
+  date: '2026-07-20'
+- signal: wayback
+  detail: archived capture 20240204035021 of envoyworldwide.com returns a parked "This Page Is Under
+    Construction" placeholder
+  date: '2026-07-20'
+- signal: wayback
+  detail: archived capture 20080126084140 of www.envoyworldwide.com already served Varolii Corporation
+    branding, confirming the EnvoyWorldWide to Varolii rebrand
+  date: '2026-07-20'
+- signal: registries
+  detail: npm search 0 results; pypi.org/pypi/envoyworldwide 404; api.github.com/orgs/envoyworldwide
+    404; GitHub repository search 0 results
+  date: '2026-07-20'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Notifications
+- Alerting
+- Messaging
+- Interactive Voice Response
+- Customer Communications
+- Business Continuity
+- Defunct
 apis: []
+common: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
