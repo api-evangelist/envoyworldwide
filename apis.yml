@@ -44,7 +44,7 @@ x-status-evidence:
   detail: npm search 0 results; pypi.org/pypi/envoyworldwide 404; api.github.com/orgs/envoyworldwide
     404; GitHub repository search 0 results
   date: '2026-07-20'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
